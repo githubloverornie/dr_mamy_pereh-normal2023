@@ -1,97 +1,110 @@
+/* Моя прекрасна матуся, вітаю тебе з днем народження! Від щирого серця хочу побажати тобі прекрасного настрою, чудових вражень, міцного здоров'я. Нехай всі твої надії виправдаються, мрії здійсняться, як за помахом чарівної палички. Нехай кожен день приносить радість, тепло і натхнення!  */
 .container{
-    max-width: 1300px;
-    margin: 0 auto;
+    max-width:1300px;
+    margin:0 auto;
 }
-.section_header{
-    height: 400px;
-    background-image: url(https://i.pinimg.com/564x/40/2a/93/402a9349523ac3d20c52e99179f34ae2.jpg);
+.header{
+    background-image: url(./img/imgonline-com-ua-Blur-0UFWump86GAdR.jpg);
+    /* filter: grayscale(50%) blur(10px); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
+}
+.tittle{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 30px;
 }
 .text_1{
+    font-size: 28px;
     text-align: center;
-    padding-top: 150px;
-    color: #000;
-    text-decoration: underline;
-    text-decoration-color: wheat;
-    font-size: 60px;
-    font-weight: bold;
+    width: 400px;
+    /* margin: 0 auto; */
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
-        /* text-decoration: under*/
-    }
+    color: #fff;
+    -webkit-text-stroke: 0.01px #fff;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .text_1:hover{
     cursor: pointer;
-    font-weight: 1200;
-    animation-name: but_2;
-    animation-duration: 2s ;
+    animation-name: text;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
-.wrapper_button{
-    margin: 0 auto;
-    width: 300px;
-    height: 100px;
+.image_1, .image_2, .image_3, .image_4{
+    width: 40px;
 }
-.button{
-    margin: 0 auto;
-   width: 300px;
-   height: 100px;
-   background-color: wheat;
-   border: black 2px bold;
-   text-align: center;
-   font-size: 40px;
-   font-weight: bold;
-   color: #000;
-   border-radius: 20px;
-   font-family: 'Times New Roman', Times, serif;
-
+.flex_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.button:hover{
-    cursor: pointer;
-    animation-name: but;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    
-    /* background-color: black;
-    color: #fff; */
-
+.section_flex-grid img{
+    width: 400px;
+    height: 520px;
 }
-@keyframes but{
+.wrapper_flex-grid-2, .wrapper_flex-grid{
+    margin-top: 50px;
+}
+.wrapper_flex-grid{
+    padding-top: 50px;
+}
+.wrapper_flex-grid-2{
+    padding-bottom: 50px;
+}
+.section_flex-grid{
+    background-image: url(https://i.pinimg.com/564x/74/76/7f/74767f98d129f5105504e1b1ced246e5.jpg);
+}
+.flex_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img_wrapflex{
+    width: 40px;
+}
+/* .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+.grid_1, .grid_2, .grid_3, .grid_4{
+    width: 300px ;
+    height: 450px;
+}
+.grid_1{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid_2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.grid_3{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.grid_4{
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+@keyframes text{
     20%{
-        background-color: rgb(245, 241, 241);
-        color: wheat;
-        border: 4px black bold;
+        color: violet;
+    }
+    30%{
+        color: #fff;
     }
     50%{
-        background-color: rgb(8, 8, 7);
-        color: #fff;
-        border: 4px black bold;
-    }
-    75%{
-        background-color: rgb(248, 249, 243);
-        color: wheat;
-        border: 4px black bold;
-    }
-    100%{
-        background-color: wheat;
-    color: #fff;
-    border: 4px black bold;
-    }
-}
-@keyframes but_2{
-    20%{
-        color: #fff;
-    }
-    50%{
-        color: #000;
-    }
-    75%{
-        color: #fff;
-    }
-    100%{
-        color: wheat;
+        color: violet;
     }
 }
 @media screen and (max-width:1200px){
@@ -108,24 +121,52 @@
     .container{
         max-width: 730px;
     }
+    .section_flex-grid img {
+        width: 300px;
+        height: 420px;
+    }
 }
 @media screen and (max-width:550px){
     .container{
         max-width: 480px;
+    }
+    .section_flex-grid img {
+        width: 200px;
+        height: 270px;
     }
 }
 @media screen and (max-width:480px){
     .container{
         max-width: 410px;
     }
-    .section_header {
-        height: 520px;
+}
+@media screen and (max-width:440px) {
+    .header{
+        height: 750px;
+    }
+    .section_flex-grid img {
+        width: 125px;
+        height: 155px;
     }
 }
 @media screen and (max-width:360px){
     .container{
         max-width: 320px;
     }
+    /* .header{
+        height: 700px;
+    } */
+    .section_flex-grid img {
+        width: 125px;
+        height: 155px;
+    }
 }
 @media screen and (max-width:320px){
+    .header{
+        height: 850px;
+    }
 }
+
+
+
+
